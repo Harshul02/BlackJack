@@ -6,6 +6,11 @@ let message="";
 let messageEL=document.getElementById("message-el");
 let sumEL=document.querySelector("#sum-el");
 let cardEL=document.getElementById("card-el");
+let playerName = "Per";
+let playerChips = 145;
+
+let palyerEL = document.getElementById("player-el");
+palyerEL.textContent = playerName + ": $" + playerChips;
 
 function getrandomCard()
 {
@@ -52,8 +57,10 @@ function renderGame()
 
 function newCard()
 {
+    if(hasAlive === true && hasBlack === false){
     let card =getrandomCard();
     sum+=card;
     cards.push(card);
     renderGame();
+    }
 }

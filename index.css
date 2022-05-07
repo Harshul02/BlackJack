@@ -24,6 +24,10 @@ h1{
     margin: 10px;
 }
 
+#player-el{
+    margin: 10px;
+}
+
 button{
     color: #016f32;
     width: 150px;
