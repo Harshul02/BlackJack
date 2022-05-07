@@ -6,11 +6,14 @@ let message="";
 let messageEL=document.getElementById("message-el");
 let sumEL=document.querySelector("#sum-el");
 let cardEL=document.getElementById("card-el");
-let playerName = "Per";
-let playerChips = 145;
+let player = {
+    name: "Per",
+    chips: 145
+}
+
 
 let palyerEL = document.getElementById("player-el");
-palyerEL.textContent = playerName + ": $" + playerChips;
+palyerEL.textContent = player.name + ": $" + player.chips;
 
 function getrandomCard()
 {
